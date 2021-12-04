@@ -1,0 +1,17 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.orders {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+.order-item {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+}

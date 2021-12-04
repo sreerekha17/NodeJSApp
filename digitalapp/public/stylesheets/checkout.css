@@ -1,0 +1,26 @@
+
+form {
+    padding: 5em;
+}
+
+form a {
+    margin-right: 10px;
+}
+.mb-3 {
+    width: 30em;
+}
+
+.validate input:invalid {
+    border: 2px dashed red;
+}
+.validate input:invalid~.invalid-feedback{
+    display: inline;
+}
+
+#total-amount {
+    border: none;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 2em;
+}

@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+html,body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top, #0077be, #a0b9c7, #fff) no-repeat;
+  background-attachment: fixed;
+}
+.container-fluid {
+  height: 100%;
+  overflow: auto;
+  padding: 3em;
+
+}
+a {
+  color: #00B7FF;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+}
+
+#cart {
+  float: right;
+}
+#cart svg {
+  height: 43px;
+  width: 43px;
+}
+
+#count{
+  position: relative;
+  left: -28px;
+  font-size: 16px;
+  font-weight: 800;
+  color: green;
+}
+
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.image-carousel img {
+  border: 1px solid rgb(88, 86, 86);
+  padding: 10px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.image-carousel img:hover {
+  transform: scale(110%, 110%);
+  border: 2px solid dimgray;
+}
+
+#estimatedDelivery {
+  font-weight: bolder;
+}
+
+form button {
+  width: 200px;
+  margin: 10px;
+}
+
+@keyframes notificationSlide {
+  from {top: -100px; opacity: 0;}
+  to {top: -20px; opacity: 1;}
+}
+
+@keyframes notificationSlideOut {
+  from { top: -20px; opacity: 1; visibility: hidden;}
+  to { top: -100px; opacity: 0; visibility: visible;}
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(100px);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+      transform: translateY(100px);
+  } 
+  100% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+}
+
+.map-wrapper {
+  
+}
+.collections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 5em;
+}
+.collections img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.alert.alert-success {
+  width: 90%;
+  position: absolute;
+  animation-duration: 4s;
+  display: none;
+}
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
+/* .alert.alert-success {
+  overflow-y: hidden;
+	max-height: 300px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+} */
+
+/* Footer */
+footer {
+  height: 3em;
+  width: 100%;
+  font-size: 0.8em;
+  background-color: teal;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  margin: 0.5em;
+
+}
+footer a:after {
+  content: '|'
+}
+footer a:last-child:after {
+  content: '|'
+}
+
+.alert.alert-success {
+  top: -1px;
+  border-radius: 0 0 4px 4px;
+  left: 25px;
+}

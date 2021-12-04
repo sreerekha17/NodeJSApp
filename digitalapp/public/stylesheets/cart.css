@@ -1,0 +1,62 @@
+header a:first-child  {
+    float: left;
+}
+
+header a:nth-child(2)  {
+    float: left;
+}
+header a:nth-child(3)  {
+    float: right;
+}
+.checkout-container {
+  margin: 25px;
+}
+/**
+ for small devices, stack them
+*/
+.item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+
+@media (min-width: 980px) {
+    .item-wrapper {
+        flex-flow: row;
+    }
+}
+
+.item-wrapper img {
+    width: 20em;
+}
+
+label.option {
+    font-weight: bold;
+    min-width: 5em;
+}
+
+
+
+label.selected {
+    font-size: 1.3em;
+}
+
+/* a.btn-danger {
+    position: absolute;
+    bottom: -29px;
+} */
+
+.price {
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    min-width: 10em;
+}
+
+.price-additional {
+    color: purple;
+    font-size: 0.5em;
+    word-break: break-all;
+    width: 10em;
+}
